@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>You're Invited! - Summer Garden Party</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: burlywood;
+            color: #333;
+        }
+
+        .invitation-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('images/garden.png');
+            opacity: 0.8;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .event-title {
+            font-size: 42px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: normal;
+        }
+
+        .event-tagline {
+            font-size: 20px;
+            margin-top: 10px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            padding: 60px;
+        }
+
+        .invitation-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #517a63;
+            font-size: 28px;
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        .details-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90%;
+            margin: 40px auto;
+        }
+
+        .details-box {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f7f5;
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+
+        .details-box h3 {
+            color: #517a63;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .details-box p {
+            margin: 10px 0 0;
+            font-size: 16px;
+        }
+
+        .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #517a63;
+        }
+
+        .rsvp-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .rsvp-button {
+            display: inline-block;
+            background-color: #517a63;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .rsvp-button:hover {
+            background-color: #3e5d4b;
+        }
+
+        .additional-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .additional-info h3 {
+            color: #517a63;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .dress-code,
+        .what-to-bring {
+            background-color: #f9f7f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .dress-code h4,
+        .what-to-bring h4 {
+            margin-top: 0;
+            color: #517a63;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #f3efeb;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .host-name {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .map-container {
+            margin-top: 30px;
+        }
+
+        .map-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-container">
+        <div class="header-image">
+            <div class="overlay">
+                <h1 class="event-title">Summer Garden Party</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="invitation-text">
+                <h2>You're Invited!</h2>
+                <p>We're thrilled to invite you to our annual Summer Garden Party! Come celebrate the season with
+                    delicious food, refreshing drinks, and great company in our blooming garden.</p>
+                <p>Whether you want to play lawn games, enjoy the summer breeze, or simply catch up with friends, we'd
+                    love to have you join us for this special occasion.</p>
+            </div>
+
+            <div class="details-container">
+                <div class="details-box">
+                    <div class="icon">📅</div>
+                    <h3>Date & Time</h3>
+                    <p>Saturday, July 15th, 2025</p>
+                    <p>3:00 PM - 8:00 PM</p>
+                </div>
+
+                <div class="details-box">
+                    <div class="icon">📍</div>
+                    <h3>Location</h3>
+                    <p>10 Downing Street</p>
+                    <p>Central London, UK</p>
+                </div>
+
+                <div class="details-box">
+                    <div class="icon">🍹</div>
+                    <h3>Refreshments</h3>
+                    <p>Garden-fresh appetizers</p>
+                    <p>Summer cocktails & mocktails</p>
+                </div>
+            </div>
+
+            <div class="rsvp-section">
+                <h3>Please RSVP by July 1st</h3>
+                <p>Let us know if you can make it so we can prepare accordingly.</p>
+                <a href="mailto:Jawadnoori1@outlook.com?subject=RSVP: Summer Garden Party" class="rsvp-button">RSVP
+                    Now</a>
+            </div>
+
+            <div class="additional-info">
+                <h3>Additional Information</h3>
+                <div class="info-grid">
+                    <div class="dress-code">
+                        <h4>Dress Code</h4>
+                        <p>Garden party casual - light summer attire recommended. Don't forget a hat for sun protection!
+                        </p>
+                    </div>
+
+                    <div class="what-to-bring">
+                        <h4>What to Bring</h4>
+                        <p>Just yourself! Though if you'd like to contribute a dessert or special beverage, please let
+                            us know in your RSVP.</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h4>Map to Our Location</h4>
+                    <img src="images/map.jpeg" alt="Map to event location">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Hosted with love by <span class="host-name">Jawad Noori</span></p>
+            <p>Questions? Contact us at Jawadnoori1@outlook.com or (+44) 737 535 3193</p>
+            <p>Created by Jawad Noori</p>
+        </footer>
+    </div>
+</body>
+
+</html>
